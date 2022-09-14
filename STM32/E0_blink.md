@@ -14,15 +14,11 @@ This example show you how to blinking led in different ways in STM32
 
 *LED_3 (red):* `PB14` 
 
----
-
 ## Used software
 
 **Configuring of project:** CubeMX
 
 **Making code:** IAR Embedded Workbench IDE; Visual Studio Code (with IAR plugins) 
-
----
 
 ## Config of project
 
