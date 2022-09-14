@@ -35,7 +35,18 @@ int main(void)
         HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, flag);
 
         // 3. And we can use registers for set pin to low or high level
-        //                             LOW level            HIGH level
-        GPIOB->BSRR = flag ? (uint32_t) GPIO_PIN_0 << 16u : GPIO_PIN_0;
+        if (flag)
+        {
+            GPIOB->BSRR = GPIO_PIN_0;       // HIGH level
+        }
+        else
+        {
+            GPIOB->BSRR = GPIO_PIN_0 << 16; // LOW level
+            // OR                           
+            GPIOB->BRR = GPIO_PIN_0;        // LOW levels
+        }
+            
+
+        
     }
 }
