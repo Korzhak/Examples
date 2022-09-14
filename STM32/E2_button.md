@@ -1,4 +1,4 @@
-# Example 2: blink
+# Example 2: button
 
 This example show you how to get button state on STM32
 
