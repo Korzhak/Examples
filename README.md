@@ -2,6 +2,8 @@
 
 Examples of using different technologies and programming languages
 
+* [C++](C++)
+    * [README.md](C++/README.md)
 * [Python](Python)
     * [README.md](Python/README.md)
     * [Configs](Python/Configs)
