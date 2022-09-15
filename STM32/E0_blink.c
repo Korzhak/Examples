@@ -46,7 +46,31 @@ int main(void)
             GPIOB->BRR = GPIO_PIN_0;        // LOW levels
         }
             
+        /*     About registers ORD, BSRR, BRR
 
+        ODR registerIt is readable and writable, 32 bits, can control the pin to be high level, 
+        and can also control the pin to be low level. For GPIO pins, write 1 to high level and 
+        write 0 to low level. (The low 16 bits are used to set the output high/low level of the 
+        corresponding bit of the GPIO port. The high 16 bits are reserved for the address, and 
+        reading and writing are invalid.)
+
+        BSRR registerIt is called port bit setting/clearing register, write-only register, 32-bit, 
+        can control the pin to be high level, also can control the pin to be low level, write 1 
+        to the high 16 bits of the register , the corresponding pin is low level , Write 1 to the 
+        lower 16 bits of the register and the corresponding pin is high. Write 0, no action
+
+        BRR registerIt is called port bit clearing register, only write register, 32 bits, can 
+        only change the pin status to low level, the corresponding bit of the register pin will 
+        be written 1 and the corresponding pin will become low level. Writing 0 has no action. 
+        (The lower 16 bits of BRR are used to set the corresponding bit of the GPIO port to output 
+        low level. The upper 16 bits are reserved for the address, and reading and writing are invalid.)
+
+        So theoretically, the function of the BRR register (lower 16 bits) is the same as the function 
+        of the upper 16 bits of the BSRR register.
+
+        Source: https://blog.krybot.com/a?ID=01600-ce7296c6-40e3-4155-b9ce-fe10137169ee
+
+        */
         
     }
 }
