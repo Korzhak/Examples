@@ -3,9 +3,9 @@
 This example show you how to print data for debugging code on STM32
 
 ## Hardware
-**MCU:** STM32H743ZIT6
+**MCU:** STM32F429IGT6
 
-**BOARD:** NUCLEO-144
+**BOARD:** Core429I
 
 ## Used software
 
