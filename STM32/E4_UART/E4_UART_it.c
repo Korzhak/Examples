@@ -11,6 +11,7 @@
 /* USER CODE BEGIN 0 */
 uint8_t UART1_rxBuffer[DATA_SIZE] = {0};
 
+// MESSAGE HANDLER
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
     HAL_UART_Receive_IT(&huart1, UART1_rxBuffer, DATA_SIZE);
@@ -20,6 +21,13 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
     }
     printf("\r\n");
 }
+
+// ERROR HANDLER
+void HAL_UART_ErrorCallback(UART_HandleTypeDef *huart)
+{
+	uint32_t error = huart->ErrorCode;
+}
+
 /* USER CODE END 0 */
 
 
