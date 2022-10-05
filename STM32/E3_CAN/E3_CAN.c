@@ -16,12 +16,9 @@ uint32_t T;
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
 {
 	HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &RxHeader, RxData);
-	printf("Received data: ");
-	for (int j = 0; j<RxHeader.DLC; j++) {
-		printf("0x%x  ", RxData[j]);
-	}
-	printf("\n");
-
+	RxHeader.DLC   // Length of RxData
+    RxHeader.StdId // Sender ID
+    // ! DO NOT USE PRINTF AND CALLING HUGE FUNCTIONS IN CALLBACKS !
 }
 /* USER CODE END 0 */
   

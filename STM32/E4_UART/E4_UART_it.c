@@ -15,11 +15,8 @@ uint8_t UART1_rxBuffer[DATA_SIZE] = {0};
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
     HAL_UART_Receive_IT(&huart1, UART1_rxBuffer, DATA_SIZE);
-    for (int i=0; i<DATA_SIZE; i++)
-    {
-        printf("%c", (char) UART1_rxBuffer[i]);
-    }
-    printf("\r\n");
+    
+    // ! DO NOT USE PRINTF AND CALLING HUGE FUNCTIONS IN CALLBACKS !
 }
 
 // ERROR HANDLER

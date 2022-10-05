@@ -18,6 +18,5 @@ Examples of using different technologies and programming languages
     * Example 0: blink [[Code](STM32/E0_blink/E0_blink.c)] [[Description](STM32/E0_blink/E0_blink.md)]
     * Example 1: printf [[Code](STM32/E1_printf/E1_printf.c)] [[Description](STM32/E1_printf/E1_printf.md)]
     * Example 2: button [[Code](STM32/E2_button/E2_button.c)] [[Description](STM32/E2_button/E2_button.md)]
-
-    
-
+    * Example 3: CAN [[Code](STM32/E3_CAN/E3_CAN.c)] [[Description](STM32/E3_CAN/E3_CAN.md)]
+    * Example 4: UART (IT) [[Code](STM32/E4_UART/E4_UART_it.c)] [[Description](STM32/E4_UART/E4_UART.md)]

@@ -18,3 +18,15 @@ This example show you how to get button state on STM32
 
 [[Code](E2_button/E2_button.c)] [[Description](E2_button/E2_button.md)]
 
+### Example 3: CAN
+
+This example show you how to work with CAN bus on STM32.
+
+[[Code](E3_CAN/E3_CAN.c)] [[Description](E3_CAN/E3_CAN.md)]
+
+### Example 4: UART
+
+This example show you how to work with UART (interrupt) on STM32.
+
+[[Code](E4_UART/E4_UART_it.c)] [[Description](E4_UART/E4_UART.md)]
+

@@ -1,6 +1,6 @@
 # Example 3: CAN bus
 
-This example show you how to working with CUN bus on STM32.
+This example show you how to work with CAN bus on STM32.
 
 For normal work you need CAN tranceiver like VP230 or MCP2515
 
